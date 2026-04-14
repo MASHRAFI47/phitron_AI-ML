@@ -5,9 +5,9 @@ import streamlit as st
 
 load_dotenv()
 
-api_key = os.environ.get("GEMINI_API_KEY")
+API_KEY = os.environ.get("GEMINI_API_KEY")
 
-client = genai.Client(api_key=api_key)
+client = genai.Client(api_key=API_KEY)
 
 response = client.models.generate_content(
     model="gemini-3-flash-preview",
